@@ -1,49 +1,37 @@
 project(lxinput-qt)
-
+# newer cmake is required for CMAKE_AUTOMOC Qt support
 cmake_minimum_required(VERSION 2.8.6)
 
-# Qt
-find_package(Qt4 REQUIRED QtCore QtGui)
+find_package(Qt4 REQUIRED QtCore QtGui) # Qt
+find_package(X11 REQUIRED) # X11
 
-# glib using pkg-config
-find_package(PkgConfig)
-pkg_check_modules(GLIB REQUIRED
-  x11
+# add src subdirectory
+add_subdirectory(src)
+
+# install a desktop entry file
+configure_file(data/lxinput-qt.desktop.in lxinput-qt.desktop @ONLY)
+install(
+  FILES ${CMAKE_CURRENT_BINARY_DIR}/lxinput-qt.desktop
+  DESTINATION share/applications
 )
 
-# set visibility to hidden to hide symbols, unlesss they're exporeted manually in the code
-set(CMAKE_CXX_FLAGS "-DQT_NO_KEYWORDS -fno-exceptions")
-
-include_directories(
-  ${QT_INCLUDES}
-  ${X11_INCLUDE_DIR}
-  ${CMAKE_CURRENT_BINARY_DIR}
+# update translations
+add_custom_target(update_translations ALL DEPENDS
+  lxinput-qt_translations
 )
 
-set(CMAKE_AUTOMOC TRUE)
-
-set(lxinput-qt_SRCS
-  lxinput-qt.cpp
-  maindialog.cpp
-)
-
-set(lxinput-qt_UIS
-  lxinput.ui
-)
-
-qt4_wrap_ui(lxinput-qt_UI_H
-  ${lxinput-qt_UIS}
-)
-
-add_executable(lxinput-qt
-  ${lxinput-qt_SRCS}
-  ${lxinput-qt_UI_H}
-)
-
-target_link_libraries(lxinput-qt
-  ${QT_QTCORE_LIBRARY}
-  ${QT_QTGUI_LIBRARY}
-  ${X11_LIBRARIES}
-)
-
-install(TARGETS lxinput-qt RUNTIME DESTINATION bin)
+# building tarball with CPack -------------------------------------------------
+# To create a source distribution, type:
+# make package_source
+include (InstallRequiredSystemLibraries)
+set (CPACK_RESOURCE_FILE_LICENSE "${CMAKE_CURRENT_SOURCE_DIR}/COPYING")
+set (CPACK_RESOURCE_FILE_README "${CMAKE_CURRENT_SOURCE_DIR}/README")
+set (CPACK_PACKAGE_VENDOR "")
+set (CPACK_PACKAGE_VERSION_MAJOR "0")
+set (CPACK_PACKAGE_VERSION_MINOR "1")
+set (CPACK_PACKAGE_VERSION_PATCH "0")
+set (CPACK_GENERATOR TBZ2)
+set (CPACK_SOURCE_GENERATOR TBZ2)
+set (CPACK_SOURCE_IGNORE_FILES /build/;.gitignore;.*~;.git;.kdev4;temp)
+# set (CPACK_SOURCE_PACKAGE_FILE_NAME pcmanfm-qt.0.1.0.tar.gz)
+include (CPack)
