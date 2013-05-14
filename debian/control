@@ -1,0 +1,25 @@
+Source: lxinput-qt
+Section: x11
+Priority: optional
+Maintainer: Julien Lavergne <gilir@ubuntu.com>
+Build-Depends: debhelper (>= 9~)
+ , cmake
+ , libqt4-dev
+ , libx11-dev
+Standards-Version: 3.9.3
+
+Package: lxinput-qt
+Architecture: any
+Depends: ${shlibs:Depends}, 
+         ${misc:Depends},
+Description: Input settings in Qt for LXDE
+ lxinput-qt is a simple utility for settings input in Qt for LXDE.
+
+Package: lxinput-qt-dbg
+Architecture: any
+Section: debug
+Depends: lxinput-qt (= ${binary:Version}),
+         ${shlibs:Depends},
+         ${misc:Depends}
+Description: Debug package for lxinput-qt
+ This package containes debug symbols.
