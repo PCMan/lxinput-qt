@@ -4,79 +4,79 @@
     <name>MainDialog</name>
     <message>
         <source>Input Device Preferences</source>
-        <translation type="unfinished"/>
+        <translation>Syötelaitteiden asetukset</translation>
     </message>
     <message>
         <source>Motion</source>
-        <translation type="unfinished"/>
+        <translation>Liike</translation>
     </message>
     <message>
         <source>High</source>
-        <translation type="unfinished"/>
+        <translation>Suuri</translation>
     </message>
     <message>
         <source>Fast</source>
-        <translation type="unfinished"/>
+        <translation>Nopea</translation>
     </message>
     <message>
         <source>Sensitivity:</source>
-        <translation type="unfinished"/>
+        <translation>Herkkyys:</translation>
     </message>
     <message>
         <source>Low</source>
-        <translation type="unfinished"/>
+        <translation>Vähäinen</translation>
     </message>
     <message>
         <source>Acceleration:</source>
-        <translation type="unfinished"/>
+        <translation>Kiihdytys:</translation>
     </message>
     <message>
         <source>Slow</source>
-        <translation type="unfinished"/>
+        <translation>Hidas</translation>
     </message>
     <message>
         <source>0</source>
-        <translation type="unfinished"/>
+        <translation>0</translation>
     </message>
     <message>
         <source>Left handed (Swap left and right mouse buttons)</source>
-        <translation type="unfinished"/>
+        <translation>Vasenkätinen (vaihda oikean ja vasemman hiiren napin paikkoja)</translation>
     </message>
     <message>
         <source>Mouse</source>
-        <translation type="unfinished"/>
+        <translation>Hiiri</translation>
     </message>
     <message>
         <source>Character Repeat</source>
-        <translation type="unfinished"/>
+        <translation>Merkin toisto</translation>
     </message>
     <message>
         <source>Long</source>
-        <translation type="unfinished"/>
+        <translation>Pitkä</translation>
     </message>
     <message>
         <source>Repeat delay:</source>
-        <translation type="unfinished"/>
+        <translation>Toiston viive:</translation>
     </message>
     <message>
         <source>Short</source>
-        <translation type="unfinished"/>
+        <translation>Lyhyt</translation>
     </message>
     <message>
         <source>Repeat interval:</source>
-        <translation type="unfinished"/>
+        <translation>Toistoväli:</translation>
     </message>
     <message>
         <source>Type in the following box to test your keyboard settings</source>
-        <translation type="unfinished"/>
+        <translation>Voit kokeilla näppäimistön asetuksia alla olevaan laatikkoon</translation>
     </message>
     <message>
         <source>Beep when there is an error of keyboard input</source>
-        <translation type="unfinished"/>
+        <translation>Piippaa kun näppäimistön näppäilyssä tapahtuu virhe</translation>
     </message>
     <message>
         <source>Keyboard</source>
-        <translation type="unfinished"/>
+        <translation>Näppäimistö</translation>
     </message>
 </context>
 </TS>
