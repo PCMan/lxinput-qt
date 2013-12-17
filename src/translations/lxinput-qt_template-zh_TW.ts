@@ -4,35 +4,35 @@
     <name>MainDialog</name>
     <message>
         <source>Input Device Preferences</source>
-        <translation type="unfinished"/>
+        <translation>輸入裝置偏好設定</translation>
     </message>
     <message>
         <source>Motion</source>
-        <translation type="unfinished"/>
+        <translation>移動</translation>
     </message>
     <message>
         <source>High</source>
-        <translation type="unfinished"/>
+        <translation>高</translation>
     </message>
     <message>
         <source>Fast</source>
-        <translation type="unfinished"/>
+        <translation>快</translation>
     </message>
     <message>
         <source>Sensitivity:</source>
-        <translation type="unfinished"/>
+        <translation>敏感度：</translation>
     </message>
     <message>
         <source>Low</source>
-        <translation type="unfinished"/>
+        <translation>低</translation>
     </message>
     <message>
         <source>Acceleration:</source>
-        <translation type="unfinished"/>
+        <translation>加速度：</translation>
     </message>
     <message>
         <source>Slow</source>
-        <translation type="unfinished"/>
+        <translation>慢</translation>
     </message>
     <message>
         <source>0</source>
@@ -40,31 +40,31 @@
     </message>
     <message>
         <source>Left handed (Swap left and right mouse buttons)</source>
-        <translation type="unfinished"/>
+        <translation>慣用左手 (將滑鼠左右鍵倒轉)</translation>
     </message>
     <message>
         <source>Mouse</source>
-        <translation type="unfinished"/>
+        <translation>滑鼠</translation>
     </message>
     <message>
         <source>Character Repeat</source>
-        <translation type="unfinished"/>
+        <translation>字元重覆</translation>
     </message>
     <message>
         <source>Long</source>
-        <translation type="unfinished"/>
+        <translation>長</translation>
     </message>
     <message>
         <source>Repeat delay:</source>
-        <translation type="unfinished"/>
+        <translation>重複延遲：</translation>
     </message>
     <message>
         <source>Short</source>
-        <translation type="unfinished"/>
+        <translation>短</translation>
     </message>
     <message>
         <source>Repeat interval:</source>
-        <translation type="unfinished"/>
+        <translation>重複間隔：</translation>
     </message>
     <message>
         <source>Type in the following box to test your keyboard settings</source>
@@ -76,7 +76,7 @@
     </message>
     <message>
         <source>Keyboard</source>
-        <translation type="unfinished"/>
+        <translation>鍵盤</translation>
     </message>
 </context>
 </TS>
