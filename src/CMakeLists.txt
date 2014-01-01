@@ -22,9 +22,27 @@ qt4_wrap_ui(lxinput-qt_UI_H
   ${lxinput-qt_UIS}
 )
 
+# add translation for lxinput-qt
+# See http://www.cmake.org/Wiki/CMake:How_To_Build_Qt4_Software
+file(GLOB TS_FILES translations/*.ts)
+option (UPDATE_TRANSLATIONS "Update source translation translations/*.ts files")
+if (UPDATE_TRANSLATIONS)
+  qt4_create_translation(QM_FILES
+    ${lxinput-qt_SRCS}
+    ${lxinput-qt_UI_H}
+    ${TS_FILES})
+else (UPDATE_TRANSLATIONS)
+  qt4_add_translation(QM_FILES ${TS_FILES})
+endif (UPDATE_TRANSLATIONS)
+add_custom_target (lxinput-qt_translations DEPENDS ${QM_FILES})
+install(FILES ${QM_FILES} DESTINATION share/lxinput-qt/translations)
+# prevent the generated files from being deleted during make clean
+set_directory_properties(PROPERTIES CLEAN_NO_CUSTOM true)
+
 add_executable(lxinput-qt
   ${lxinput-qt_SRCS}
   ${lxinput-qt_UI_H}
+  ${QM_FILES}
 )
 
 add_definitions(
@@ -38,19 +56,3 @@ target_link_libraries(lxinput-qt
 )
 
 install(TARGETS lxinput-qt RUNTIME DESTINATION bin)
-
-# add translation for lxinput-qt
-# See http://www.cmake.org/Wiki/CMake:How_To_Build_Qt4_Software
-file(GLOB TS_FILES translations/*.ts)
-qt4_create_translation(QM_FILES
-  ${lxinput-qt_SRCS}
-  ${lxinput-qt_UI_H}
-  ${TS_FILES})
-qt4_add_translation(QM_FILES ${TS_FILES})
-add_custom_target (lxinput-qt_translations DEPENDS ${QM_FILES})
-install(FILES ${QM_FILES} DESTINATION share/lxinput-qt/translations)
-
-# prevent the generated files from being deleted during make clean
-set_directory_properties(PROPERTIES
-  CLEAN_NO_CUSTOM true
-)

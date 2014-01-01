@@ -15,11 +15,6 @@ install(
   DESTINATION share/applications
 )
 
-# update translations
-add_custom_target(update_translations ALL DEPENDS
-  lxinput-qt_translations
-)
-
 # building tarball with CPack -------------------------------------------------
 # To create a source distribution, type:
 # make package_source
@@ -33,5 +28,4 @@ set (CPACK_PACKAGE_VERSION_PATCH "0")
 set (CPACK_GENERATOR TBZ2)
 set (CPACK_SOURCE_GENERATOR TBZ2)
 set (CPACK_SOURCE_IGNORE_FILES /build/;.gitignore;.*~;.git;.kdev4;temp)
-# set (CPACK_SOURCE_PACKAGE_FILE_NAME pcmanfm-qt.0.1.0.tar.gz)
 include (CPack)
