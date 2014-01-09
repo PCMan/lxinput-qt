@@ -20,19 +20,19 @@
     </message>
     <message>
         <source>Sensitivity:</source>
-        <translation type="unfinished"/>
+        <translation>Følsomhed:</translation>
     </message>
     <message>
         <source>Low</source>
-        <translation type="unfinished"/>
+        <translation>Lav</translation>
     </message>
     <message>
         <source>Acceleration:</source>
-        <translation type="unfinished"/>
+        <translation>Acceleration:</translation>
     </message>
     <message>
         <source>Slow</source>
-        <translation type="unfinished"/>
+        <translation>Langsom</translation>
     </message>
     <message>
         <source>0</source>
@@ -40,7 +40,7 @@
     </message>
     <message>
         <source>Left handed (Swap left and right mouse buttons)</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Venstrehåndet (Byt rundt på venstre og højre museknap)</translation>
     </message>
     <message>
         <source>Mouse</source>
@@ -52,15 +52,15 @@
     </message>
     <message>
         <source>Long</source>
-        <translation type="unfinished"/>
+        <translation>Lang</translation>
     </message>
     <message>
         <source>Repeat delay:</source>
-        <translation type="unfinished"/>
+        <translation>Interval mellem gentagelser:</translation>
     </message>
     <message>
         <source>Short</source>
-        <translation type="unfinished"/>
+        <translation>Kort</translation>
     </message>
     <message>
         <source>Repeat interval:</source>
