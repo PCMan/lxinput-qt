@@ -4,79 +4,79 @@
     <name>MainDialog</name>
     <message>
         <source>Input Device Preferences</source>
-        <translation type="unfinished"/>
+        <translation>入力デバイスの設定</translation>
     </message>
     <message>
         <source>Motion</source>
-        <translation type="unfinished"/>
+        <translation>動作</translation>
     </message>
     <message>
         <source>High</source>
-        <translation type="unfinished"/>
+        <translation>高い</translation>
     </message>
     <message>
         <source>Fast</source>
-        <translation type="unfinished"/>
+        <translation>速い</translation>
     </message>
     <message>
         <source>Sensitivity:</source>
-        <translation type="unfinished"/>
+        <translation>感度:</translation>
     </message>
     <message>
         <source>Low</source>
-        <translation type="unfinished"/>
+        <translation>低い</translation>
     </message>
     <message>
         <source>Acceleration:</source>
-        <translation type="unfinished"/>
+        <translation>加速:</translation>
     </message>
     <message>
         <source>Slow</source>
-        <translation type="unfinished"/>
+        <translation>遅い</translation>
     </message>
     <message>
         <source>0</source>
-        <translation type="unfinished"/>
+        <translation>0</translation>
     </message>
     <message>
         <source>Left handed (Swap left and right mouse buttons)</source>
-        <translation type="unfinished"/>
+        <translation>左利き (左右のマウスボタンを入れ替える)</translation>
     </message>
     <message>
         <source>Mouse</source>
-        <translation type="unfinished"/>
+        <translation>マウス</translation>
     </message>
     <message>
         <source>Character Repeat</source>
-        <translation type="unfinished"/>
+        <translation>文字リピート</translation>
     </message>
     <message>
         <source>Long</source>
-        <translation type="unfinished"/>
+        <translation>長い</translation>
     </message>
     <message>
         <source>Repeat delay:</source>
-        <translation type="unfinished"/>
+        <translation>リピートするまでの遅延:</translation>
     </message>
     <message>
         <source>Short</source>
-        <translation type="unfinished"/>
+        <translation>短い</translation>
     </message>
     <message>
         <source>Repeat interval:</source>
-        <translation type="unfinished"/>
+        <translation>リピートの間隔:</translation>
     </message>
     <message>
         <source>Type in the following box to test your keyboard settings</source>
-        <translation type="unfinished"/>
+        <translation>下のボックスにタイプして、キーボード設定のテストをしてください</translation>
     </message>
     <message>
         <source>Beep when there is an error of keyboard input</source>
-        <translation type="unfinished"/>
+        <translation>キーボード入力にエラーがあるときはビープ音を出す</translation>
     </message>
     <message>
         <source>Keyboard</source>
-        <translation type="unfinished"/>
+        <translation>キーボード</translation>
     </message>
 </context>
 </TS>
