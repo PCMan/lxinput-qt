@@ -16,7 +16,7 @@ int main(int argc, char** argv) {
   qtTranslator.load("qt_" + QLocale::system().name(), QLibraryInfo::location(QLibraryInfo::TranslationsPath));
   app.installTranslator(&qtTranslator);
   // install our own tranlations
-  translator.load("lxinput-qt_" + QLocale::system().name(), PACKAGE_DATA_DIR "/translations");
+  translator.load("lxqt-config-input_" + QLocale::system().name(), PACKAGE_DATA_DIR "/translations");
   app.installTranslator(&translator);
 
   // build our GUI
