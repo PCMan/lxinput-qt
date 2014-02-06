@@ -1,6 +1,5 @@
 /*
-    <one line to give the program's name and a brief idea of what it does.>
-    Copyright (C) 2013  <copyright holder> <email>
+    Copyright (C) 2013-2014  Hong Jen Yee (PCMan) <pcman.tw@gmail.com>
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -177,15 +176,15 @@ void MainDialog::loadSettings() {
     configName = "session";
   QSettings settings("lxqt", configName);
   settings.beginGroup("Mouse");
-  oldAccel = accel = settings.value("AccFactor", 20).toInt();
-  oldThreshold = threshold = settings.value("AccThreshold", 10).toInt();
-  oldLeftHanded = leftHanded = settings.value("LeftHanded", false).toBool();
+  oldAccel = accel = settings.value("acc_factor", 20).toInt();
+  oldThreshold = threshold = settings.value("acc_threshold", 10).toInt();
+  oldLeftHanded = leftHanded = settings.value("left_handed", false).toBool();
   settings.endGroup();
 
   settings.beginGroup("Keyboard");
-  oldDelay = delay = settings.value("Delay", 500).toInt();
-  oldInterval = interval = settings.value("Interval", 30).toInt();
-  oldBeep = beep = settings.value("Beep", true).toBool();
+  oldDelay = delay = settings.value("delay", 500).toInt();
+  oldInterval = interval = settings.value("interval", 30).toInt();
+  oldBeep = beep = settings.value("beep", true).toBool();
   settings.endGroup();
 }
 
@@ -193,15 +192,15 @@ void MainDialog::accept() {
   QSettings settings("lxqt", configName);
 
   settings.beginGroup("Mouse");
-  settings.setValue("AccFactor", accel);
-  settings.setValue("AccThreshold", threshold);
-  settings.setValue("LeftHanded", leftHanded);
+  settings.setValue("acc_factor", accel);
+  settings.setValue("acc_threshold", threshold);
+  settings.setValue("left_handed", leftHanded);
   settings.endGroup();
 
   settings.beginGroup("Keyboard");
-  settings.setValue("Delay", delay);
-  settings.setValue("Interval", interval);
-  settings.setValue("Beep", beep);
+  settings.setValue("delay", delay);
+  settings.setValue("interval", interval);
+  settings.setValue("beep", beep);
   settings.endGroup();
 
   /* ask the settigns daemon to reload */
