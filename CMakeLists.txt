@@ -1,4 +1,4 @@
-project(lxinput-qt)
+project(lxqt-config-input)
 # newer cmake is required for CMAKE_AUTOMOC Qt support
 cmake_minimum_required(VERSION 2.8.6)
 
@@ -9,9 +9,9 @@ find_package(X11 REQUIRED) # X11
 add_subdirectory(src)
 
 # install a desktop entry file
-configure_file(data/lxinput-qt.desktop.in lxinput-qt.desktop @ONLY)
+configure_file(data/lxqt-config-input.desktop.in lxqt-config-input.desktop @ONLY)
 install(
-  FILES ${CMAKE_CURRENT_BINARY_DIR}/lxinput-qt.desktop
+  FILES ${CMAKE_CURRENT_BINARY_DIR}/lxqt-config-input.desktop
   DESTINATION share/applications
 )
 
