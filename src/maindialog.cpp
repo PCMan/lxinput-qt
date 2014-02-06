@@ -172,42 +172,10 @@ void MainDialog::onKeyboardBeepToggled(bool checked) {
 }
 
 void MainDialog::loadSettings() {
-  const char* session_name = getenv("DESKTOP_SESSION");
-  /* load settings from current session config files */
-  if(!session_name)
-    session_name = "LXDE";
-  QString relativePath = QString("/lxsession/") % session_name % "/desktop.conf";
-
-  // FIXME: should we make the xdg base dir stuff a module?
-  // add user config home dir and xdg config dirs to a list
-  QStringList dirs;
-  QString configHome = getenv("XDG_CONFIG_HOME");
-  if(configHome.isEmpty())
-    configHome = QDir::homePath() % "/.config";
-  userConfigFile = configHome % relativePath;
-  dirs.append(configHome);
-  const char* config_dirs = getenv("XDG_CONFIG_DIRS");
-  if(config_dirs) {
-    dirs.append(QString(config_dirs).split(':', QString::SkipEmptyParts));
-  }
-  else {
-    dirs.append("/etc/xdg");
-  }
-
-  QString configFileName;
-  // locate config file
-  Q_FOREACH(QString dir, dirs) {
-    QString filename = dir % relativePath;
-    if(QFile(filename).exists()) {
-      configFileName = filename;
-      break;
-    }
-  }
-
- if(configFileName.isEmpty())
-   return;
- 
-  QSettings settings(configFileName, QSettings::IniFormat);
+  configName = qgetenv("LXQT_SESSION_CONFIG");
+  if(configName.isEmpty())
+    configName = "session";
+  QSettings settings("lxqt", configName);
   settings.beginGroup("Mouse");
   oldAccel = accel = settings.value("AccFactor", 20).toInt();
   oldThreshold = threshold = settings.value("AccThreshold", 10).toInt();
@@ -222,7 +190,8 @@ void MainDialog::loadSettings() {
 }
 
 void MainDialog::accept() {
-  QSettings settings(userConfigFile, QSettings::IniFormat);
+  QSettings settings("lxqt", configName);
+
   settings.beginGroup("Mouse");
   settings.setValue("AccFactor", accel);
   settings.setValue("AccThreshold", threshold);
@@ -234,9 +203,10 @@ void MainDialog::accept() {
   settings.setValue("Interval", interval);
   settings.setValue("Beep", beep);
   settings.endGroup();
+
   /* ask the settigns daemon to reload */
   /* FIXME: is this needed? */
-  /* g_spawn_command_line_sync("lxde-settings-daemon reload", NULL, NULL, NULL, NULL); */
+
   QDialog::accept();
 }
 

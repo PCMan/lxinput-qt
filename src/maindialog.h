@@ -51,7 +51,7 @@ private Q_SLOTS:
 private:
   Ui::MainDialog ui;
 
-  QString userConfigFile;
+  QString configName;
   int accel;
   int oldAccel;
   int threshold;
