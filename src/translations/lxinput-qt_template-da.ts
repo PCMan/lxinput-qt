@@ -4,19 +4,19 @@
     <name>MainDialog</name>
     <message>
         <source>Input Device Preferences</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Enhedspræference</translation>
     </message>
     <message>
         <source>Motion</source>
-        <translation type="unfinished"/>
+        <translation>Bevægelse</translation>
     </message>
     <message>
         <source>High</source>
-        <translation type="unfinished"/>
+        <translation>Høj</translation>
     </message>
     <message>
         <source>Fast</source>
-        <translation type="unfinished"/>
+        <translation>Hurtig</translation>
     </message>
     <message>
         <source>Sensitivity:</source>
@@ -28,7 +28,7 @@
     </message>
     <message>
         <source>Acceleration:</source>
-        <translation>Acceleration:</translation>
+        <translation>Enhedspræference</translation>
     </message>
     <message>
         <source>Slow</source>
