@@ -44,7 +44,7 @@
     </message>
     <message>
         <source>Mouse</source>
-        <translation type="unfinished"/>
+        <translation>Mus</translation>
     </message>
     <message>
         <source>Character Repeat</source>
@@ -64,7 +64,7 @@
     </message>
     <message>
         <source>Repeat interval:</source>
-        <translation type="unfinished"/>
+        <translation>Gentagelsesinterval:</translation>
     </message>
     <message>
         <source>Type in the following box to test your keyboard settings</source>
