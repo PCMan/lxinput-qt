@@ -4,79 +4,79 @@
     <name>MainDialog</name>
     <message>
         <source>Input Device Preferences</source>
-        <translation type="unfinished"/>
+        <translation>Préférences des périphériques d'entrée</translation>
     </message>
     <message>
         <source>Motion</source>
-        <translation type="unfinished"/>
+        <translation>Mouvement</translation>
     </message>
     <message>
         <source>High</source>
-        <translation type="unfinished"/>
+        <translation>Forte</translation>
     </message>
     <message>
         <source>Fast</source>
-        <translation type="unfinished"/>
+        <translation>Rapide</translation>
     </message>
     <message>
         <source>Sensitivity:</source>
-        <translation type="unfinished"/>
+        <translation>Sensibilité :</translation>
     </message>
     <message>
         <source>Low</source>
-        <translation type="unfinished"/>
+        <translation>Faible</translation>
     </message>
     <message>
         <source>Acceleration:</source>
-        <translation type="unfinished"/>
+        <translation>Accélération :</translation>
     </message>
     <message>
         <source>Slow</source>
-        <translation type="unfinished"/>
+        <translation>Lente</translation>
     </message>
     <message>
         <source>0</source>
-        <translation type="unfinished"/>
+        <translation>0</translation>
     </message>
     <message>
         <source>Left handed (Swap left and right mouse buttons)</source>
-        <translation type="unfinished"/>
+        <translation>Gaucher (inverse les boutons droit et gauche de la souris)</translation>
     </message>
     <message>
         <source>Mouse</source>
-        <translation type="unfinished"/>
+        <translation>Souris</translation>
     </message>
     <message>
         <source>Character Repeat</source>
-        <translation type="unfinished"/>
+        <translation>Répétition de caractère</translation>
     </message>
     <message>
         <source>Long</source>
-        <translation type="unfinished"/>
+        <translation>Long</translation>
     </message>
     <message>
         <source>Repeat delay:</source>
-        <translation type="unfinished"/>
+        <translation>Délai de répétition :</translation>
     </message>
     <message>
         <source>Short</source>
-        <translation type="unfinished"/>
+        <translation>Court</translation>
     </message>
     <message>
         <source>Repeat interval:</source>
-        <translation type="unfinished"/>
+        <translation>Intervalle de répétition :</translation>
     </message>
     <message>
         <source>Type in the following box to test your keyboard settings</source>
-        <translation type="unfinished"/>
+        <translation>Tapez dans le champ ci-dessous pour tester vos paramètres clavier</translation>
     </message>
     <message>
         <source>Beep when there is an error of keyboard input</source>
-        <translation type="unfinished"/>
+        <translation>Émettre un son lors d'une erreur d'entrée sur le clavier</translation>
     </message>
     <message>
         <source>Keyboard</source>
-        <translation type="unfinished"/>
+        <translation>Clavier</translation>
     </message>
 </context>
 </TS>
