@@ -4,79 +4,80 @@
     <name>MainDialog</name>
     <message>
         <source>Input Device Preferences</source>
-        <translation type="unfinished"/>
+        <translation>Preferências do Dispositivo de Entrada </translation>
     </message>
     <message>
         <source>Motion</source>
-        <translation type="unfinished"/>
+        <translation>Movimento</translation>
     </message>
     <message>
         <source>High</source>
-        <translation type="unfinished"/>
+       <translation>Alto</translation>
     </message>
     <message>
         <source>Fast</source>
-        <translation type="unfinished"/>
+        <translation>Rápido</translation>
     </message>
     <message>
         <source>Sensitivity:</source>
-        <translation type="unfinished"/>
+        <translation>Sensibilidade:</translation>
     </message>
     <message>
         <source>Low</source>
-        <translation type="unfinished"/>
+        <translation>Baixo</translation>
     </message>
     <message>
         <source>Acceleration:</source>
-        <translation type="unfinished"/>
+        <translation>Aceleração:</translation>
     </message>
     <message>
         <source>Slow</source>
-        <translation type="unfinished"/>
+        <translation>Lento</translation>
     </message>
     <message>
         <source>0</source>
-        <translation type="unfinished"/>
+        <translation>0</translation>
     </message>
     <message>
         <source>Left handed (Swap left and right mouse buttons)</source>
-        <translation type="unfinished"/>
+        <translation>Canhoto (Inverter botões esquerdo e direito do mouse)</translation>
     </message>
     <message>
         <source>Mouse</source>
-        <translation type="unfinished"/>
+        <translation>Mouse</translation>
     </message>
     <message>
         <source>Character Repeat</source>
-        <translation type="unfinished"/>
+        <translation>Repetição de Caracter</translation>
     </message>
     <message>
         <source>Long</source>
-        <translation type="unfinished"/>
+        <translation>Longo</translation>
     </message>
     <message>
         <source>Repeat delay:</source>
-        <translation type="unfinished"/>
+        <translation>Atraso de Repetição:</translation>
     </message>
     <message>
         <source>Short</source>
-        <translation type="unfinished"/>
+        <translation>Curto</translation>
     </message>
     <message>
         <source>Repeat interval:</source>
-        <translation type="unfinished"/>
+        <translation>Intervalo de Repetição:</translation>
     </message>
     <message>
         <source>Type in the following box to test your keyboard settings</source>
-        <translation type="unfinished"/>
+        <translation>Digite na caixa seguinte para testar as definições do teclado</translation>
     </message>
     <message>
         <source>Beep when there is an error of keyboard input</source>
-        <translation type="unfinished"/>
+        <translation>Apitar quando houver um erro de entrada do teclado</translation>
     </message>
     <message>
         <source>Keyboard</source>
-        <translation type="unfinished"/>
+        <translation>Teclado</translation>
     </message>
 </context>
 </TS>
+
