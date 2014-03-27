@@ -4,7 +4,7 @@
     <name>MainDialog</name>
     <message>
         <source>Input Device Preferences</source>
-        <translation>Preferências do Dispositivo de Entrada </translation>
+        <translation>PreferÃªncias do Dispositivo de Entrada </translation>
     </message>
     <message>
         <source>Motion</source>
@@ -16,7 +16,7 @@
     </message>
     <message>
         <source>Fast</source>
-        <translation>Rápido</translation>
+        <translation>RÃ¡pido</translation>
     </message>
     <message>
         <source>Sensitivity:</source>
@@ -28,7 +28,7 @@
     </message>
     <message>
         <source>Acceleration:</source>
-        <translation>Aceleração:</translation>
+        <translation>AceleraÃ§Ã£o:</translation>
     </message>
     <message>
         <source>Slow</source>
@@ -40,7 +40,7 @@
     </message>
     <message>
         <source>Left handed (Swap left and right mouse buttons)</source>
-        <translation>Canhoto (Inverter botões esquerdo e direito do mouse)</translation>
+        <translation>Canhoto (Inverter botÃµes esquerdo e direito do mouse)</translation>
     </message>
     <message>
         <source>Mouse</source>
@@ -48,7 +48,7 @@
     </message>
     <message>
         <source>Character Repeat</source>
-        <translation>Repetição de Caracter</translation>
+        <translation>RepetiÃ§Ã£o de Caracter</translation>
     </message>
     <message>
         <source>Long</source>
@@ -56,7 +56,7 @@
     </message>
     <message>
         <source>Repeat delay:</source>
-        <translation>Atraso de Repetição:</translation>
+        <translation>Atraso de RepetiÃ§Ã£o:</translation>
     </message>
     <message>
         <source>Short</source>
@@ -64,11 +64,11 @@
     </message>
     <message>
         <source>Repeat interval:</source>
-        <translation>Intervalo de Repetição:</translation>
+        <translation>Intervalo de RepetiÃ§Ã£o:</translation>
     </message>
     <message>
         <source>Type in the following box to test your keyboard settings</source>
-        <translation>Digite na caixa seguinte para testar as definições do teclado</translation>
+        <translation>Digite na caixa seguinte para testar as definiÃ§Ãµes do teclado</translation>
     </message>
     <message>
         <source>Beep when there is an error of keyboard input</source>
